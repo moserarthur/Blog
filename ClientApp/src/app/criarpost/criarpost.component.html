@@ -1,0 +1,14 @@
+<div class="form-group">
+<input class="form-control" placeholder="text" [(ngModel)]="post.titulo">
+</div>
+<div class="form-group">
+  <input class="form-control" placeholder="Imagem" [(ngModel)]="post.imagem">
+</div>
+<div class="form-group">
+  <input class="form-control" placeholder="Decricao" [(ngModel)]="post.descricao">
+</div>
+<div class="form-group">
+  <input class="form-control" placeholder="Autor" [(ngModel)]="post.autor">
+</div>
+<button type="button" (click)="enviar()" class="btn btn-primary"> Enviar</button>
+

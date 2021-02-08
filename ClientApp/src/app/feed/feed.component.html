@@ -1,0 +1,29 @@
+<div class="col-12">
+
+  <div class="row">
+    <div class="col-6">
+      <p>{{post.data | date:'d, MMM y, h:mm:ss'}}</p>
+    </div>
+    <div class="col-3">
+      <button type="button" class="btn btn-sm btn-success" (click)="like()">
+        Likes <span class="badge badge-light">{{post.likes}}</span>
+      </button>
+    </div>
+    <div class="col-3">
+      <button type="button" class="btn btn-sm btn-danger" (click)="dislike()">
+        Dislikes <span class="badge badge-light">{{post.disLikes}}</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="card" style="width: 600px;">
+    <img [src]="post.imagem" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">{{post.titulo}}</h5>
+      <p class="card-text">{{post.descricao}}</p>
+      <h6 class="card-subtitle mb-2 text-muted">{{post.autor}}</h6>
+    </div>
+  </div>
+
+  <hr />
+</div>
